@@ -1,8 +1,12 @@
-# QA Automation Framework | AdminCES
+# Automatización de Testing Funcional | AdminCES
 
 **Automatización de pruebas funcionales web con Java y Selenium WebDriver.**
 
-Framework de automatización desarrollado como proyecto de especialización en Testing Funcional, enfocado en validar flujos críticos de una aplicación web, mejorar la mantenibilidad de las pruebas y facilitar la ejecución organizada de escenarios automatizados.
+Proyecto desarrollado en el marco del Taller de Automatización del Testing Funcional del CES, orientado a validar los 
+principales flujos de la aplicación web AdminCES: inicio de sesión, creación de usuarios con perfiles de 
+administrador y tester, reinicio de contraseña y eliminación de usuarios de tipo tester.
+
+Implementa el patrón de diseño Page Object Model (POM) para organizar los componentes de la aplicación y separar las interacciones con la interfaz de los casos de prueba. Incorpora pruebas parametrizadas para validar escenarios con distintos conjuntos de datos y suites de ejecución para organizar las pruebas automatizadas.
 
 ## 🛠️ Tecnologías
 
@@ -46,10 +50,16 @@ Esta organización favorece la reutilización de componentes, reduce el acoplami
 
 ### Ejecutar las pruebas
 
-Desde la carpeta `automation-framework`:
+Ejecutar todas las pruebas automatizadas
 
 ```bash
 mvn clean test
+```
+
+Visualizar el reporte de Allure en el navegador
+
+```bash
+mvn allure:serve
 ```
 
 Para ejecutar las pruebas desde IntelliJ IDEA, abre el proyecto Maven y ejecuta la clase de prueba o suite que quieras validar.
